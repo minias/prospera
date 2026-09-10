@@ -36,7 +36,8 @@
     </p>
   </section>
 
-  <a class="explore" href="#explore">
+  <!-- <a class="explore" href="#explore"> -->
+  <a class="explore" href="/">   
     <span>EXPLORE</span>
     <span class="arrow" aria-hidden="true">→</span>
   </a>

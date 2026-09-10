@@ -43,6 +43,22 @@ jobs:
       - name: Build
         run: npm run build
 
+      - name: Verify build output
+        run: |
+          echo "=== Current directory ==="
+          pwd
+
+          echo "=== Directory listing ==="
+          ls -la
+
+          echo "=== Build directory ==="
+          if [ -d "./build" ]; then
+            ls -la ./build
+          else
+            echo "ERROR: ./build does not exist"
+            exit 1
+          fi
+
       - name: Setup GitHub Pages
         uses: actions/configure-pages@v5
 
