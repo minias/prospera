@@ -46,6 +46,7 @@
 <style>
   .world-page {
     position: fixed;
+    box-sizing: border-box;
     inset: 0;
     overflow: hidden;
     background: #05070a;
@@ -60,6 +61,7 @@
 
   .brand-header {
     position: absolute;
+    box-sizing: border-box;
     top: 0;
     left: 0;
     z-index: 10;
